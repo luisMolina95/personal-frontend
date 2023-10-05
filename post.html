@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTTP POST Request Example with Fetch</title>
+</head>
+<body>
+    <h1>HTTP POST Request Example with Fetch</h1>
+
+    <form id="postForm">
+        <label for="body">Body:</label>
+        <br>
+        <textarea id="body" name="body" required></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="responseMessage"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const postForm = document.querySelector('#postForm');
+            const responseMessage = document.querySelector('#responseMessage');
+
+            postForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const formData = new FormData(postForm);
+                
+                try {
+                    // Define la URL para la petición POST
+                    const url = 'https://personal-backend-wvxf.onrender.com/blogs';
+
+                    
+
+                    // Realiza la petición POST utilizando fetch
+                    const response = await fetch(url, {
+                        method: 'POST',
+                        body: JSON.stringify(Object.fromEntries(formData)),
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                    });
+
+                    // Verifica si el estado de la respuesta es OK (200)
+                    if (response.status === 201) {
+                        const responseData = await response.json();
+                        responseMessage.textContent = `Respuesta del servidor: ${JSON.stringify(responseData)}`;
+                    } else {
+                        console.error(`Error en la solicitud: ${response.status} - ${response.statusText}`);
+                        responseMessage.textContent = 'Error en la solicitud al servidor';
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    responseMessage.textContent = 'Error inesperado';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
