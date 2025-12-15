@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTTP GET Request Example with Fetch</title>
+</head>
+<body>
+    <div> Get in contact with me: luisrodmolina@gmail.com </br> <a href="https://www.linkedin.com/in/luis-rodolfo-molina-molina-306ba5193"><br>linkedin</br></a><div>
+    <h1>HTTP GET Request Example with Fetch</h1>
+
+    <!-- Agrega un div para mostrar un mensaje de carga -->
+    <div id="loadingMessage">Cargando...</div>
+
+    <table id="responseTable" border="1">
+        <thead>
+            <tr>
+                <th>_id</th>
+                <th>body</th>
+                <th>date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Response data will be displayed here -->
+        </tbody>
+    </table>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                // Define el URL para la petición GET
+                const url = 'https://personal-backend-wvxf.onrender.com/blogs';
+
+                // Muestra el mensaje de carga
+                const loadingMessage = document.querySelector('#loadingMessage');
+                loadingMessage.textContent = 'Cargando...';
+
+                // Realiza la petición GET utilizando fetch
+                const response = await fetch(url);
+
+                // Verifica si el estado de la respuesta es OK (200)
+                if (response.status === 200) {
+                    // Parsea la respuesta JSON
+                    const responseData = await response.json();
+
+                    // Oculta el mensaje de carga una vez que se ha completado la carga
+                    loadingMessage.style.display = 'none';
+
+                    // Obtiene el elemento de la tabla tbody
+                    const tableBody = document.querySelector('#responseTable tbody');
+
+                    // Limpia las filas existentes de la tabla
+                    tableBody.innerHTML = '';
+
+                    // Recorre los datos de la respuesta y crea filas de la tabla
+                    responseData.forEach(blog => {
+                        const row = document.createElement('tr');
+                        const idCell = document.createElement('td');
+                        const bodyCell = document.createElement('td');
+                        const dateCell = document.createElement('td');
+
+                        idCell.textContent = blog._id;
+                        bodyCell.innerHTML = blog.body;
+                        dateCell.textContent = blog.date;
+                        
+
+                        row.appendChild(idCell);
+                        row.appendChild(bodyCell);
+                        row.appendChild(dateCell);
+
+                        tableBody.appendChild(row);
+                    });
+                } else {
+                    console.error(`Error al obtener datos: ${response.status} - ${response.statusText}`);
+                    loadingMessage.textContent = 'Error al cargar datos';
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                loadingMessage.textContent = 'Error inesperado';
+            }
+        });
+    </script>
+</body>
+</html>
