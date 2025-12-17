@@ -1,0 +1,79 @@
+body {
+  background-color: lemonchiffon;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background-color: lightcoral;
+}
+
+#headerTier1 {
+  background-color: lightblue;
+}
+
+#headerTier1Left {
+  background-color: lightgray;
+}
+
+#headerTier1LeftData {
+  background-color: lightsteelblue;
+  display: grid;
+}
+#headerTier1LeftDataName {
+
+  position: relative;
+  margin: 47px 0px 57px 0px;
+  left: 74px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+}
+
+#headerTier1LeftDataName p {
+  font: normal normal 700 25px/1.12em "poppins-semibold", "poppins", sans-serif;
+  margin: 0;
+}
+
+#headerTier1LeftDataName a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#headerTier1LeftDataSlash {
+  position: relative;
+  margin: 52px 0px 54px 0px;
+  left: 228px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+}
+
+#headerTier1LeftDataSlash p {
+  font: normal normal 400 17px/1.4em "unito", sans-serif;
+  margin: 0;
+}
+
+#headerTier1LeftDataRole {
+
+  position: relative;
+  margin: 52px 0px 54px 0px;
+  left: 242px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+}
+
+#headerTier1LeftDataRole p {
+  font: normal normal 400 17px/1.4em "nunito", sans-serif;
+  margin: 0;
+}
+
+#headerTier1Right {
+  background-color: lightsalmon;
+}
+
+main {
+  background-color: lightpink;
+}
+
+footer {
+  background-color: lightyellow;
+}
