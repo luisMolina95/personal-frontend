@@ -20,8 +20,19 @@ header {
   background-color: lightsteelblue;
   display: grid;
 }
-#headerTier1LeftDataName {
 
+#headerTier1LeftDataSquare {
+  position: relative;
+  margin: 53px 0px 57px 0px;
+  left: 50px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  width: 16px;
+  height: 16px;
+  background-color: blue;
+}
+
+#headerTier1LeftDataName {
   position: relative;
   margin: 47px 0px 57px 0px;
   left: 74px;
@@ -53,7 +64,6 @@ header {
 }
 
 #headerTier1LeftDataRole {
-
   position: relative;
   margin: 52px 0px 54px 0px;
   left: 242px;
