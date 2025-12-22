@@ -81,7 +81,7 @@ header {
 
 #headerRight nav {
   position: relative;
-  margin: 40px 0px 0px calc((100% - 500px));
+  margin: 40px 0px 0px calc((100% - 450px));
 }
 
 #headerRight nav ul li {
