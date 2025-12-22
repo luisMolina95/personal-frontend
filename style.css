@@ -6,22 +6,20 @@ body {
 
 header {
   background-color: lightcoral;
+  display: flex;
+  width: 100%;
 }
 
-#headerTier1 {
-  background-color: lightblue;
-}
-
-#headerTier1Left {
+#headerLeft {
   background-color: lightgray;
+  flex: 490 1 0%;
 }
 
-#headerTier1LeftData {
-  background-color: lightsteelblue;
+#headerLeftData {
   display: grid;
 }
 
-#headerTier1LeftDataSquare {
+#headerLeftDataSquare {
   position: relative;
   margin: 53px 0px 57px 0px;
   left: 50px;
@@ -32,7 +30,7 @@ header {
   background-color: blue;
 }
 
-#headerTier1LeftDataName {
+#headerLeftDataName {
   position: relative;
   margin: 47px 0px 57px 0px;
   left: 74px;
@@ -40,17 +38,17 @@ header {
   justify-self: start;
 }
 
-#headerTier1LeftDataName p {
+#headerLeftDataName p {
   font: normal normal 700 25px/1.12em "poppins-semibold", "poppins", sans-serif;
   margin: 0;
 }
 
-#headerTier1LeftDataName a {
+#headerLeftDataName a {
   text-decoration: none;
   color: inherit;
 }
 
-#headerTier1LeftDataSlash {
+#headerLeftDataSlash {
   position: relative;
   margin: 52px 0px 54px 0px;
   left: 228px;
@@ -58,12 +56,12 @@ header {
   justify-self: start;
 }
 
-#headerTier1LeftDataSlash p {
-  font: normal normal 400 17px/1.4em "unito", sans-serif;
+#headerLeftDataSlash p {
+  font: normal normal 400 17px/1.4em "nunito", sans-serif;
   margin: 0;
 }
 
-#headerTier1LeftDataRole {
+#headerLeftDataRole {
   position: relative;
   margin: 52px 0px 54px 0px;
   left: 242px;
@@ -71,13 +69,40 @@ header {
   justify-self: start;
 }
 
-#headerTier1LeftDataRole p {
+#headerLeftDataRole p {
   font: normal normal 400 17px/1.4em "nunito", sans-serif;
   margin: 0;
 }
 
-#headerTier1Right {
+#headerRight {
   background-color: lightsalmon;
+  flex: 490 1 0%;
+}
+
+#headerRight nav {
+  position: relative;
+  margin: 40px 0px 0px calc((100% - 500px));
+
+}
+
+#headerRight nav ul li {
+  display: inline-block;
+  padding-left: 19px;
+}
+
+#headerRight nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#headerRight nav ul li a:hover {
+  color: blue;
+}
+
+#headerRight nav ul li a p {
+  display: inline-block;
+  font: normal normal lighter 14px/1.4em "roboto", sans-serif;
+  
 }
 
 main {
