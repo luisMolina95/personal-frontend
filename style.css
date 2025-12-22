@@ -7,7 +7,7 @@ body {
 header {
   position: sticky !important;
   top: 0px;
-  background-color: lightcoral;
+  background-color: white;
   display: flex;
   width: 100%;
 }
