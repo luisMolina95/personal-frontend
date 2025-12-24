@@ -1,7 +1,11 @@
+html {
+  height: 100%;
+}
+
 body {
-  background-color: lemonchiffon;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 header {
@@ -105,9 +109,31 @@ header {
 
 main {
   background-color: lightpink;
-  min-height: 1500px;
+  height: 100%;
+  min-height: 952px;
+  display: inline;
+}
+
+#mainBG {
+  background-color: antiquewhite;
+  display: flex;
+  height: 100%;
+}
+
+#mainBGLeft {
+  background-color: rgb(230, 218, 206);
+  flex: 393;
+}
+
+#mainBGRigth {
+  background-color: white;
+  flex: 587;
+}
+
+#mainContent {
+  background-color: lightyellow;
 }
 
 footer {
-  background-color: lightyellow;
+  background-color: lightgoldenrodyellow;
 }
