@@ -137,6 +137,36 @@ main {
   grid-area: 1 / 1;
 }
 
+#mainContentCard {
+  min-height: 480px;
+  max-height: 525px;
+  width: 375px;
+  height: 100%;
+  display: grid;
+}
+
+#mainContentCardBG {
+  background-color: rgb(244, 236, 230);
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+  height: 100%;
+  width: 100%;
+  grid-area: 1 / 1;
+}
+
+#mainContentCardDataPhoto {
+  margin: 43px 0px 34px 81px;
+}
+
+#mainContentCardDataPhoto img {
+  border-radius: 50%;
+  height: 205px;
+  width: 205px;
+}
+
+#mainContentCardData {
+  grid-area: 1 / 1;
+}
+
 footer {
   background-color: lightgoldenrodyellow;
 }
