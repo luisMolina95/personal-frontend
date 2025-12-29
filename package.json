@@ -18,7 +18,7 @@
     "url": "https://github.com/luisMolina95/personal-frontend/issues"
   },
   "homepage": "https://github.com/luisMolina95/personal-frontend#readme",
-  "dependencies": {
+  "devDependencies": {
     "live-server": "^1.2.2"
   }
 }

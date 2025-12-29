@@ -28,7 +28,7 @@ header {
   position: relative;
   margin: 53px 0px 57px 0px;
   left: 50px;
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1;
   justify-self: start;
   width: 16px;
   height: 16px;
@@ -39,7 +39,7 @@ header {
   position: relative;
   margin: 47px 0px 57px 0px;
   left: 74px;
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1;
   justify-self: start;
 }
 
@@ -57,7 +57,7 @@ header {
   position: relative;
   margin: 52px 0px 54px 0px;
   left: 228px;
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1;
   justify-self: start;
 }
 
@@ -70,7 +70,7 @@ header {
   position: relative;
   margin: 52px 0px 54px 0px;
   left: 242px;
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1;
   justify-self: start;
 }
 
@@ -111,13 +111,14 @@ main {
   background-color: lightpink;
   height: 100%;
   min-height: 952px;
-  display: inline;
+  display: grid;
 }
 
 #mainBG {
   background-color: antiquewhite;
   display: flex;
   height: 100%;
+  grid-area: 1 / 1;
 }
 
 #mainBGLeft {
@@ -132,6 +133,8 @@ main {
 
 #mainContent {
   background-color: lightyellow;
+  margin: 150px 0px 10px calc((100% - 980px) * 0.5);
+  grid-area: 1 / 1;
 }
 
 footer {
