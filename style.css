@@ -177,6 +177,13 @@ main {
   margin: 0;
 }
 
+#mainContentCardDataLine {
+  width: 50px;
+  border-top: 2px solid rgb(0, 80, 255);
+  position: relative;
+  left: 160px;
+}
+
 #mainContentCardData {
   grid-area: 1 / 1;
 }
