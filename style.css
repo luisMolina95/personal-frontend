@@ -9,8 +9,8 @@ body {
 }
 
 header {
-  position: sticky !important;
-  top: 0px;
+  position: fixed;
+  z-index: 1;
   background-color: white;
   display: flex;
   width: 100%;
@@ -154,13 +154,27 @@ main {
 }
 
 #mainContentCardDataPhoto {
-  margin: 43px 0px 34px 81px;
+  position: relative;
+  margin: 43px 0px 34px 0;
+  left: 81px;
 }
 
 #mainContentCardDataPhoto img {
   border-radius: 50%;
   height: 205px;
   width: 205px;
+}
+
+#mainContentCardDataName {
+  margin: 0px 0px 25px 0;
+  width: 179px;
+  position: relative;
+  left: 98px;
+}
+#mainContentCardDataName p {
+  font: normal normal 700 27px/1.12em "poppins-semibold", "poppins", sans-serif;
+  text-align: center;
+  margin: 0;
 }
 
 #mainContentCardData {
