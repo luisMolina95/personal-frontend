@@ -9,8 +9,8 @@ body {
 }
 
 header {
-  position: sticky !important;
-  top: 0px;
+  position: fixed;
+  z-index: 1;
   background-color: white;
   display: flex;
   width: 100%;
@@ -28,7 +28,7 @@ header {
   position: relative;
   margin: 53px 0px 57px 0px;
   left: 50px;
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1;
   justify-self: start;
   width: 16px;
   height: 16px;
@@ -39,7 +39,7 @@ header {
   position: relative;
   margin: 47px 0px 57px 0px;
   left: 74px;
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1;
   justify-self: start;
 }
 
@@ -57,7 +57,7 @@ header {
   position: relative;
   margin: 52px 0px 54px 0px;
   left: 228px;
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1;
   justify-self: start;
 }
 
@@ -70,7 +70,7 @@ header {
   position: relative;
   margin: 52px 0px 54px 0px;
   left: 242px;
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1;
   justify-self: start;
 }
 
@@ -111,17 +111,18 @@ main {
   background-color: lightpink;
   height: 100%;
   min-height: 952px;
-  display: inline;
+  display: grid;
 }
 
 #mainBG {
   background-color: antiquewhite;
   display: flex;
   height: 100%;
+  grid-area: 1 / 1;
 }
 
 #mainBGLeft {
-  background-color: rgb(230, 218, 206);
+  background-color: rgb(200, 200, 200);
   flex: 393;
 }
 
@@ -132,6 +133,92 @@ main {
 
 #mainContent {
   background-color: lightyellow;
+  margin: 150px 0px 10px calc((100% - 980px) * 0.5);
+  grid-area: 1 / 1;
+}
+
+#mainContentCard {
+  width: 375px;
+  height: 500px;
+  display: grid;
+}
+
+#mainContentCardBG {
+  background-color: rgb(247, 247, 247);
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+  height: 100%;
+  width: 100%;
+  grid-area: 1 / 1;
+}
+
+#mainContentCardDataPhoto {
+  position: relative;
+  margin: 43px 0px 34px 0;
+  left: 81px;
+}
+
+#mainContentCardDataPhoto img {
+  border-radius: 50%;
+  height: 205px;
+  width: 205px;
+}
+
+#mainContentCardDataName {
+  margin: 0px 0px 25px 0;
+  width: 179px;
+  position: relative;
+  left: 98px;
+}
+#mainContentCardDataName p {
+  font: normal normal 700 27px/1.12em "poppins-semibold", "poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+#mainContentCardDataLine {
+  margin: 0px 0px 25px 0;
+  width: 50px;
+  border-top: 2px solid rgb(0, 80, 255);
+  position: relative;
+  left: 160px;
+}
+
+#mainContentCardDataTitle {
+  width: 277px;
+  margin: 0px 0px 41px 0;
+  position: relative;
+  left: 49px;
+}
+#mainContentCardDataTitle p {
+  font: normal normal normal 17px/1.4em "nunito", sans-serif;
+  letter-spacing: 0.25em;
+  text-align: center;
+  margin: 0;
+}
+
+#mainContentCardDataLinks {
+  margin: 0;
+  background-color: white;
+  position: relative;
+  display: grid;
+}
+
+#mainContentCardDataLinks ul {
+  position: relative;
+  margin: 10px 0px 10px 0;
+  list-style: none;
+  left: 172px;
+  padding: 0;
+  width: fit-content;
+}
+
+#mainContentCardDataLinks img {
+  width: 30px;
+  height: 30px;
+}
+
+#mainContentCardData {
+  grid-area: 1 / 1;
 }
 
 footer {
