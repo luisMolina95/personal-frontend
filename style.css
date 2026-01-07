@@ -135,6 +135,9 @@ main {
   background-color: lightyellow;
   margin: 150px 0px 10px calc((100% - 980px) * 0.5);
   grid-area: 1 / 1;
+  display: flex;
+  height: fit-content;
+  width: fit-content;
 }
 
 #mainContentCard {
@@ -219,6 +222,13 @@ main {
 
 #mainContentCardData {
   grid-area: 1 / 1;
+}
+
+#mainContentWelcome {
+  width: 375px;
+  height: 500px;
+  display: grid;
+  margin-left: 35px;
 }
 
 footer {
