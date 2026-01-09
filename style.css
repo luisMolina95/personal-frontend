@@ -141,7 +141,7 @@ main {
 }
 
 #mainContentCard {
-  width: 375px;
+  width: 400px;
   height: 500px;
   display: grid;
 }
@@ -225,12 +225,29 @@ main {
 }
 
 #mainContentWelcome {
-  width: 375px;
+  width: 425px;
   height: 500px;
-  display: grid;
+  display: flex;
   margin-left: 35px;
+  flex-direction: column;
 }
 
+#mainContentWelcomeHello p {
+  font: normal normal bold 100px/1.4em "poppins-semibold", "poppins", sans-serif;
+  margin: 0;
+
+}
+
+#mainContentWelcomeWho p {
+  font: normal normal normal 24px/1.4em "nunito", sans-serif;
+  margin: 0;
+
+}
+
+#mainContentWelcomeIntro p{
+  font: normal normal normal 18px/1.4em "nunito", sans-serif;
+  margin: 0;
+}
 footer {
   background-color: lightgoldenrodyellow;
 }
