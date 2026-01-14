@@ -235,19 +235,66 @@ main {
 #mainContentWelcomeHello p {
   font: normal normal bold 100px/1.4em "poppins-semibold", "poppins", sans-serif;
   margin: 0;
-
 }
 
 #mainContentWelcomeWho p {
   font: normal normal normal 24px/1.4em "nunito", sans-serif;
   margin: 0;
-
 }
 
-#mainContentWelcomeIntro p{
+#mainContentWelcomeIntro p {
   font: normal normal normal 18px/1.4em "nunito", sans-serif;
   margin: 0;
 }
 footer {
   background-color: lightgoldenrodyellow;
+}
+
+#mainContentWelcomeLinks {
+  display: flex;
+  column-gap: 23px;
+  margin: 40px 0px 40px 0px;
+}
+
+#mainContentWelcomeLinksButtonResume {
+   background-color: rgb(0, 80, 255);
+  border: solid rgb(0, 80, 255);
+  border-radius: 100px;
+  border-width: thin;
+  width: 130px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainContentWelcomeLinksButtonResume a {
+  text-decoration: none;
+}
+
+#mainContentWelcomeLinksButtonResume a p {
+  font: normal normal bold 14px/1.4em "nunito", sans-serif;
+  color: white;
+}
+
+#mainContentWelcomeLinksButtonProjects {
+  background-color: rgb(255, 255, 255);
+ 
+  border: solid rgb(0, 0, 0);
+  border-radius: 100px;
+  border-width: thin;
+  width: 130px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainContentWelcomeLinksButtonProjects a {
+  text-decoration: none;
+}
+
+#mainContentWelcomeLinksButtonProjects a p {
+  font: normal normal bold 14px/1.4em "nunito", sans-serif;
+  color: black;
 }
