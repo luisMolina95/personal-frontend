@@ -117,9 +117,9 @@ header {
 
 main {
   height: fit-content;
-  min-height: 952px;
+  min-height: 700px;
   display: flex;
-  padding: 175px 0 0 0;
+  padding: 175px 0 52px 0;
   width: fit-content;
   margin: 0 auto 0 auto;
   flex-wrap: wrap;
