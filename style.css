@@ -14,39 +14,37 @@ header {
   z-index: 1;
   background-color: white;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 #headerLeft {
-  flex: 490 1 0%;
+  margin: 0 0 0 40px;
 }
 
 #headerLeftData {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
 }
 
 #headerLeftDataSquare {
-  position: relative;
-  margin: 53px 0px 57px 0px;
-  left: 50px;
-  grid-area: 1 / 1;
-  justify-self: start;
   width: 16px;
   height: 16px;
   background-color: blue;
 }
 
-#headerLeftDataName {
-  position: relative;
-  margin: 47px 0px 57px 0px;
-  left: 74px;
-  grid-area: 1 / 1;
-  justify-self: start;
-}
-
 #headerLeftDataName p {
-  font: normal normal 700 25px/1.12em "poppins-semibold", "poppins", sans-serif;
-  margin: 0;
+  font:
+    normal normal 700 25px/1.12em "poppins-semibold",
+    "poppins",
+    sans-serif;
 }
 
 #headerLeftDataName a {
@@ -54,58 +52,67 @@ header {
   color: inherit;
 }
 
+#headerLeftDataRole,
 #headerLeftDataSlash {
-  position: relative;
-  margin: 52px 0px 54px 0px;
-  left: 228px;
-  grid-area: 1 / 1;
-  justify-self: start;
+  padding: 6px 0 0 0;
 }
 
 #headerLeftDataSlash p {
-  font: normal normal 400 17px/1.4em "nunito", sans-serif;
-  margin: 0;
-}
-
-#headerLeftDataRole {
-  position: relative;
-  margin: 52px 0px 54px 0px;
-  left: 242px;
-  grid-area: 1 / 1;
-  justify-self: start;
+  font:
+    normal normal 400 17px/1.4em "nunito",
+    sans-serif;
 }
 
 #headerLeftDataRole p {
-  font: normal normal 400 17px/1.4em "nunito", sans-serif;
-  margin: 0;
-}
-
-#headerRight {
-  flex: 490 1 0%;
+  font:
+    normal normal 400 17px/1.4em "nunito",
+    sans-serif;
 }
 
 #headerRight nav {
-  position: relative;
-  margin: 40px 0px 0px calc((100% - 450px));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
-#headerRight nav ul li {
-  display: inline-block;
-  padding-left: 19px;
+#headerRight {
+  margin: 0 40px 0 0;
 }
 
-#headerRight nav ul li a {
+#headerRight a {
   text-decoration: none;
-  color: inherit;
 }
 
-#headerRight nav ul li a:hover {
+#headerRight a:hover {
   color: blue;
 }
 
-#headerRight nav ul li a p {
-  display: inline-block;
-  font: normal normal lighter 14px/1.4em "roboto", sans-serif;
+#headerRight p {
+  font:
+    normal normal lighter 14px/1.4em "roboto",
+    sans-serif;
+}
+
+@media (max-width: 640px) {
+  header {
+    justify-content: center;
+  }
+
+  #headerLeft {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  #headerRight {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
 }
 
 main {
@@ -161,7 +168,10 @@ main {
   left: 98px;
 }
 #mainContentCardDataName p {
-  font: normal normal 700 27px/1.12em "poppins-semibold", "poppins", sans-serif;
+  font:
+    normal normal 700 27px/1.12em "poppins-semibold",
+    "poppins",
+    sans-serif;
   text-align: center;
   margin: 0;
 }
@@ -181,7 +191,9 @@ main {
   left: 49px;
 }
 #mainContentCardDataTitle p {
-  font: normal normal normal 17px/1.4em "nunito", sans-serif;
+  font:
+    normal normal normal 17px/1.4em "nunito",
+    sans-serif;
   letter-spacing: 0.25em;
   text-align: center;
   margin: 0;
@@ -218,22 +230,29 @@ main {
   display: flex;
   flex-direction: column;
   background-color: white;
-   justify-content: flex-start; /* optional: top of container */
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 #mainContentWelcomeHello p {
-  font: normal normal bold 100px/1.4em "poppins-semibold", "poppins", sans-serif;
+  font:
+    normal normal bold 100px/1.4em "poppins-semibold",
+    "poppins",
+    sans-serif;
   margin: 0;
 }
 
 #mainContentWelcomeWho p {
-  font: normal normal normal 24px/1.4em "nunito", sans-serif;
+  font:
+    normal normal normal 24px/1.4em "nunito",
+    sans-serif;
   margin: 0;
 }
 
 #mainContentWelcomeIntro p {
-  font: normal normal normal 18px/1.4em "nunito", sans-serif;
+  font:
+    normal normal normal 18px/1.4em "nunito",
+    sans-serif;
   margin: 0;
   padding: 10px;
 }
@@ -270,7 +289,9 @@ footer {
 }
 
 #mainContentWelcomeLinksButtonResume a p {
-  font: normal normal bold 14px/1.4em "nunito", sans-serif;
+  font:
+    normal normal bold 14px/1.4em "nunito",
+    sans-serif;
   color: white;
   transition: color 0.2s ease;
 }
@@ -305,7 +326,9 @@ footer {
 }
 
 #mainContentWelcomeLinksButtonProjects a p {
-  font: normal normal bold 14px/1.4em "nunito", sans-serif;
+  font:
+    normal normal bold 14px/1.4em "nunito",
+    sans-serif;
   color: black;
   transition: color 0.2s ease;
 }
