@@ -1,4 +1,4 @@
 routes:
   - type: rewrite
-    source: /test
-    destination: /test.html
+    source: /resume
+    destination: /resume.html
