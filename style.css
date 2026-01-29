@@ -140,19 +140,20 @@ main {
   display: grid;
 }
 
-#mainContentCardBG {
+#mainContentCardData {
+  grid-area: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(247, 247, 247);
   box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
   height: 100%;
   width: 100%;
-  grid-area: 1 / 1;
 }
 
 #mainContentCardDataPhoto {
-  position: relative;
   margin: 43px 0px 34px 0;
-  left: 81px;
-  width: fit-content;
 }
 
 #mainContentCardDataPhoto img {
@@ -164,8 +165,6 @@ main {
 #mainContentCardDataName {
   margin: 0px 0px 25px 0;
   width: 179px;
-  position: relative;
-  left: 98px;
 }
 #mainContentCardDataName p {
   font:
@@ -180,15 +179,11 @@ main {
   margin: 0px 0px 25px 0;
   width: 50px;
   border-top: 2px solid rgb(0, 80, 255);
-  position: relative;
-  left: 160px;
 }
 
 #mainContentCardDataTitle {
   width: 277px;
   margin: 0px 0px 41px 0;
-  position: relative;
-  left: 49px;
 }
 #mainContentCardDataTitle p {
   font:
@@ -200,28 +195,22 @@ main {
 }
 
 #mainContentCardDataLinks {
-  margin: 0;
   background-color: white;
-  position: relative;
   display: grid;
+  width: 100%;
+  justify-content: center;
 }
 
 #mainContentCardDataLinks ul {
-  position: relative;
   margin: 10px 0px 10px 0;
   list-style: none;
-  left: 172px;
+
   padding: 0;
-  width: fit-content;
 }
 
 #mainContentCardDataLinks img {
   width: 30px;
   height: 30px;
-}
-
-#mainContentCardData {
-  grid-area: 1 / 1;
 }
 
 #mainContentWelcome {
@@ -368,6 +357,7 @@ footer a {
 @media (max-width: 640px) {
   footer {
     justify-content: center;
+    width: 100%;
   }
 
   #footerLeft {
