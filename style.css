@@ -467,3 +467,15 @@ footer a {
     "poppins",
     sans-serif;
 }
+
+.mainContent {
+  background-color: white;
+  width: 724px;
+  min-height: 385px;
+}
+
+@media (max-width: 724px) {
+  .mainContent {
+    width: 100%;
+  }
+}
