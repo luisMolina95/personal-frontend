@@ -3,12 +3,16 @@ html {
   width: 100%;
 }
 
+#bodyIndex {
+  background: linear-gradient(to right, rgb(200, 200, 200) 41%, white 41%);
+}
+
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgb(200, 200, 200) 41%, white 41%);
+  background: rgb(200, 200, 200);
   display: flex;
   flex-flow: column;
 }
@@ -119,13 +123,18 @@ header {
   }
 }
 
-main {
+#mainIndex {
+  flex-direction: row;
+}
 
+main {
   display: flex;
   padding: 175px 0 52px 0;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  flex-direction: column;
+  align-items: center;
 }
 
 #mainContent {
@@ -269,7 +278,7 @@ main {
 }
 
 #mainContentWelcomeLinksButtonResume:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   transition: background-color 0.4s ease;
 }
 
@@ -375,4 +384,86 @@ footer a {
     justify-content: center;
     margin: 0;
   }
+}
+
+/*RESUME*/
+
+#mainTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+#mainTitleSquare {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+}
+
+#mainTitleName h1 {
+  font:
+    normal normal bold 35px/1.4em "poppins-semibold",
+    "poppins",
+    sans-serif;
+}
+
+#mainExp {
+  width: 724px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 724px) {
+  #mainExp {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+#mainExpCV {
+  background-color: rgb(0, 80, 255);
+  border: solid rgb(0, 80, 255);
+  border-radius: 100px;
+  border-width: thin;
+  width: 130px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+#mainExpCV:hover {
+  background-color: transparent;
+  transition: background-color 0.4s ease;
+}
+
+#mainExpCV a {
+  text-decoration: none;
+}
+
+#mainExpCV a p {
+  font:
+    normal normal bold 14px/1.4em "nunito",
+    sans-serif;
+  color: white;
+  transition: color 0.2s ease;
+}
+
+#mainExpCV:hover a p {
+  color: black;
+  transition: color 0.4s ease;
+}
+
+#mainExpName h2 {
+  font:
+    normal normal bold 25px/1.4em "poppins-semibold",
+    "poppins",
+    sans-serif;
 }

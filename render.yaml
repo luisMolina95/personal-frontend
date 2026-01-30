@@ -2,3 +2,6 @@ routes:
   - type: rewrite
     source: /resume
     destination: /resume.html
+  - type: rewrite
+    source: /blog
+    destination: /blog.html
