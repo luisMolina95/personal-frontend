@@ -472,10 +472,61 @@ footer a {
   background-color: white;
   width: 724px;
   min-height: 385px;
+  box-shadow: -11.31px 11.31px 25px 0px rgba(138, 131, 124, 0.23);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mainContentJob {
+  width: 241px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: -60px 0 0 0;
+  gap: 10px;
+}
+
+.mainContentJob p {
+  margin: 0;
+}
+
+.mainContentJobDuration p {
+  font:
+    normal normal bold 20px/1.4em "poppins",
+    sans-serif;
+  color: rgb(0, 80, 255);
+}
+
+.mainContentJobPosition p {
+  font:
+    normal normal normal 17px/1.4em "nunito",
+    sans-serif;
+}
+
+.mainContentJobName p {
+  font:
+    normal normal normal 14px/1.4em "nunito",
+    sans-serif;
+}
+
+.mainContentJobDescription {
+  width: 440px;
+  padding: 0px 20px 0 20px;
+  font:
+    normal normal normal 17px/1.4em "nunito",
+    sans-serif;
 }
 
 @media (max-width: 724px) {
   .mainContent {
     width: 100%;
+  }
+
+  .mainContentJob {
+    padding: 20px 0 0 0;
+    margin: 0;
   }
 }
