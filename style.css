@@ -129,7 +129,7 @@ header {
 
 main {
   display: flex;
-  padding: 175px 0 52px 0;
+  padding: 165px 0 52px 0;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
@@ -251,11 +251,13 @@ main {
 }
 
 #mainContentWelcomeIntro p {
+  padding: 0px 20px 0 20px;
+}
+
+#mainContentWelcomeIntro p {
   font:
     normal normal normal 16px/1.4em "nunito",
     sans-serif;
-  margin: 0;
-  padding: 10px;
 }
 
 #mainContentWelcomeLinks {
@@ -478,6 +480,7 @@ footer a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 20px 0 20px 0;
 }
 
 .mainContentJob {
