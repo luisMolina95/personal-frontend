@@ -410,7 +410,7 @@ footer a {
     sans-serif;
 }
 
-#mainExp {
+.mainSubtitle {
   width: 724px;
   display: flex;
   flex-direction: row;
@@ -421,14 +421,14 @@ footer a {
 }
 
 @media (max-width: 724px) {
-  #mainExp {
+  .mainSubtitle {
     width: 100%;
     justify-content: center;
     flex-direction: column;
   }
 }
 
-#mainExpCV {
+.mainSubtitleButton {
   background-color: rgb(0, 80, 255);
   border: solid rgb(0, 80, 255);
   border-radius: 100px;
@@ -441,16 +441,16 @@ footer a {
   transition: background-color 0.2s ease;
 }
 
-#mainExpCV:hover {
+.mainSubtitleButton:hover {
   background-color: transparent;
   transition: background-color 0.4s ease;
 }
 
-#mainExpCV a {
+.mainSubtitleButton a {
   text-decoration: none;
 }
 
-#mainExpCV a p {
+.mainSubtitleButton a p {
   font:
     normal normal bold 14px/1.4em "nunito",
     sans-serif;
@@ -458,12 +458,12 @@ footer a {
   transition: color 0.2s ease;
 }
 
-#mainExpCV:hover a p {
+.mainSubtitleButton:hover a p {
   color: black;
   transition: color 0.4s ease;
 }
 
-#mainExpName h2 {
+.mainSubtitleName h2 {
   font:
     normal normal bold 25px/1.4em "poppins-semibold",
     "poppins",
