@@ -468,7 +468,7 @@ footer a {
     sans-serif;
 }
 
-.mainContent {
+.mainContentResume {
   background-color: white;
   width: 724px;
   min-height: 385px;
@@ -481,7 +481,7 @@ footer a {
   padding: 20px 0 20px 0;
 }
 
-.mainContentJob {
+.mainContentResumeJob {
   width: 241px;
   display: flex;
   flex-direction: column;
@@ -489,31 +489,31 @@ footer a {
   gap: 10px;
 }
 
-.mainContentJob p {
+.mainContentResumeJob p {
   margin: 0;
   text-align: center;
 }
 
-.mainContentJobDuration p {
+.mainContentResumeJobDuration p {
   font:
     normal normal bold 20px/1.4em "poppins",
     sans-serif;
   color: rgb(0, 80, 255);
 }
 
-.mainContentJobPosition p {
+.mainContentResumeJobPosition p {
   font:
     normal normal normal 17px/1.4em "nunito",
     sans-serif;
 }
 
-.mainContentJobName p {
+.mainContentResumeJobName p {
   font:
     normal normal normal 14px/1.4em "nunito",
     sans-serif;
 }
 
-.mainContentJobDescription {
+.mainContentResumeJobDescription {
   width: 440px;
   padding: 0px 20px 0 20px;
   font:
@@ -521,11 +521,11 @@ footer a {
     sans-serif;
 }
 
-.mainContentJobImg {
+.mainContentResumeJobImg {
   margin: 20px 0 0 0;
 }
 
-.mainContentJobImg img {
+.mainContentResumeJobImg img {
   width: 100px;
   height: 100px;
   border-radius: 20%;
@@ -535,11 +535,11 @@ footer a {
 }
 
 @media (max-width: 724px) {
-  .mainContent {
+  .mainContentResume {
     width: 100%;
   }
 
-  .mainContentJob {
+  .mainContentResumeJob {
     padding: 20px 0 0 0;
     margin: 0;
   }
@@ -594,7 +594,7 @@ footer a {
   height: 13px;
 }
 
-.mainOtherSectionItemName p{
+.mainOtherSectionItemName p {
   font:
     normal normal normal 16px/1.4em "nunito",
     sans-serif;
@@ -609,8 +609,6 @@ footer a {
     width: fit-content;
   }
 
-
-
   .mainOtherSectionTitle p {
     text-align: center;
   }
@@ -619,6 +617,21 @@ footer a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
   }
+}
+
+/*PROJECTS*/
+
+#mainDescription {
+  max-width: 708px;
+  width: 100%;
+}
+
+#mainDescription p {
+  text-align: center;
+  font:
+    normal normal normal 17px/1.4em "nunito",
+    sans-serif;
+  margin: 0;
+  padding: 0 20px 0 20px;
 }
