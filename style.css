@@ -635,3 +635,10 @@ footer a {
   margin: 0;
   padding: 0 20px 0 20px;
 }
+
+#mainContentProject {
+  max-width: 750px;
+  min-height: 404px;
+  width: 100%;
+  background-color: white;
+}
