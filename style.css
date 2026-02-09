@@ -628,11 +628,10 @@ footer a {
 }
 
 #mainDescription p {
-  text-align: center;
+  text-align: justify;
   font:
     normal normal normal 17px/1.4em "nunito",
     sans-serif;
-  margin: 0;
   padding: 0 20px 0 20px;
 }
 
@@ -646,27 +645,23 @@ footer a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  margin: 0;
+  padding: 20px 0 20px 0;
 }
 
-.mainContentProjectText {
+.mainContentProjectContent {
   width: 428px;
-  background-color: aquamarine;
-  padding: 0;
-  margin: 0;
+  padding: 20px 0 20px 0;
 }
 
 .mainContentProjectMedia {
   width: 322px;
-  background-color: bisque;
-  padding: 0;
-  margin: 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.mainContentProjectMedia img {
-  width: 322px;
+.mainContentProjectMedia iframe {
+  width: auto;
   height: 404px;
 }
 
@@ -675,11 +670,61 @@ footer a {
     width: 100%;
   }
 
-  .mainContentProjectText {
+  .mainContentProjectContent {
     width: 100%;
   }
 
   .mainContentProjectMedia {
     width: 100%;
   }
+
+  .mainContentProjectMedia iframe {
+    width: 100%;
+  }
+}
+
+.mainContentProjectContentTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  align-items: center;
+}
+
+.mainContentProjectContentTitleSquare {
+  background-color: rgb(0, 80, 255);
+  width: 10px;
+  height: 50px;
+}
+
+.mainContentProjectContentTitleData {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContentProjectContentTitleDataName p {
+  margin: 0;
+  padding: 0;
+  font:
+    normal normal bold 20px/1.4em "poppins-semibold",
+    "poppins",
+    sans-serif;
+  color: rgb(0, 80, 255);
+}
+
+.mainContentProjectContentTitleDataRole p {
+  margin: 0;
+  padding: 0;
+  font:
+    normal normal bold 14px/1.4em "nunito",
+    sans-serif;
+}
+
+.mainContentProjectContentDescription {
+  padding: 0 20px 0 20px;
+}
+
+.mainContentProjectContentDescription p {
+  font:
+    normal normal normal 17px/1.4em "nunito",
+    sans-serif;
 }
