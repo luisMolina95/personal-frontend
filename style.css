@@ -728,3 +728,8 @@ footer a {
     normal normal normal 17px/1.4em "nunito",
     sans-serif;
 }
+
+.mainContentProjectContentDescription p {
+  padding: 0;
+  margin: 0;
+}
