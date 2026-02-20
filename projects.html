@@ -110,11 +110,65 @@
           </div>
           <div class="mainContentProjectContentDescription">
             <p>
-              👨🏻‍💻<br /><a
+              I've always felt the need to understand how computers really work.
+              But I've spent years using libraries and dependencies that already
+              handle everything for you. Think the <b>C standard library</b>,
+              When we need to print something to the console, we just call
+              <b>printf</b> and move on. <br />
+              I wanted to know what actually happens under the hood so I started
+              this project.
+            </p>
+            <p>
+              I decided to strip things down and go as low-level as possible. To
+              keep as simple as possible, I chose a simple computer to avoid
+              making things over complicated.
+            </p>
+            <p>
+              That's why I picked the Commodore 64. It has only 64 KB of memory.
+              You can look at the whole memory at a glance. It doesn't get
+              simpler than that.
+            </p>
+            <p>
+              My plan was to start with some abstraction, then remove it step by
+              step.
+            </p>
+            <p>
+              First, I used the
+              <a href="https://github.com/cc65/cc65"><b>CC65 toolchain</b></a>
+              and the
+              <a href="https://vice-emu.sourceforge.io/"
+                ><b>VICE emulator</b></a
+              >
+              (big thanks to the people who built them, God Bless them). <br />
+              I learned how to use the monitor and debugger to inspect memory
+              and step through assembly instructions. I treated it like a
+              sandbox for me to play around with memory, check registers and
+              track changes.
+            </p>
+            <p>Then I moved in stages:</p>
+            <ol>
+              <li>A quick proof of concept in C using the standard library.</li>
+              <li>Assembly, still relying on the standard library.</li>
+              <li>Pure assembly without the standard library.</li>
+            </ol>
+            <p>
+              In this project, We explored <b>Memory Management</b>,
+              <b>C toolchain</b>, <b>Debugging</b> and <b>Assembly</b> for the
+              <b>Commodore 64</b>.
+            </p>
+            <p>
+              Our goal was to remove layers until we could clearly see what the
+              computer is actually doing (which is basically just math and
+              memory changes), and I hope we made that clearer today.
+            </p>
+            <p>
+              👨🏻‍💻
+              <a
                 href="https://github.com/luisMolina95/cc/tree/main/20%20-%20commodore64"
-                >https://github.com/luisMolina95/cc/tree/main/20%20-%20commodore64</a
+                ><b>Check The Code Here!</b></a
               >
             </p>
+            <p>Thank you for your time, and <b>God</b> bless you.</p>
           </div>
         </div>
         <div class="mainContentProjectMedia">
