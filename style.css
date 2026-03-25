@@ -738,4 +738,5 @@ footer a {
 .mainContentProjectContentDescription a {
   padding: 0;
   margin: 0;
+  overflow-wrap: anywhere;
 }
